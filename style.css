@@ -1,0 +1,55 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --bg: black;
+    --accent: blue;
+    --text: grey;
+    --border: white;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: ui-monospace, 'Cascadia Code', monospace;
+    line-height: 1.6;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+nav a { color: var(--accent); text-decoration: none; font-size: 0.8rem; }
+main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+h2 { 
+    color: var(--accent); 
+    font-size: 1.2rem; 
+    margin-top: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ol { 
+    list-style: none; 
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+li {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    background: white;
+}
+li p:first-of-type { 
+    font-weight: bold; 
+    color: black;
+}
+li p:last-of-type { 
+    font-size: 0.85rem; 
+    opacity: 0.7; 
+}
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 0.75rem;
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+}
